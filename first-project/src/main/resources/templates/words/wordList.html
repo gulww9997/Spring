@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="container">
+    <div>
+        <table>
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>단어</th>
+                <th>뜻</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="word : ${words}">
+                <td th:text="${word.id}"></td>
+                <td th:text="${word.term}"></td>
+                <td th:text="${word.definition}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div> <!-- /container -->
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="container">
+    <form action="/words/new" method="post">
+        <div class="form-group">
+            <label for="term">단어</label>
+            <input type="text" id="term" name="term" placeholder="단어를 입력하세요">
+
+            <label for="definition">뜻</label>
+            <input type="text" id="definition" name="definition" placeholder="뜻을 입력하세요">
+        </div>
+        <button type="submit">등록</button>
+    </form>
+</div> <!-- /container -->
+</body>
+</html>
